@@ -1,7 +1,4 @@
-#Írjon függvényt, amely két szám esetén meghatározza a legnagyobb közös prím
-#osztójukat. Készítsen hatékony implementáció, hogy közel valós időben tetszőleges
-#agy számokra is lefusson a program.
-
+#Eldönti hogy az adott szám prím-e
 def prime(n):
     if n > 1:
         for i in range(2,n):
