@@ -9,7 +9,9 @@ def prime(n):
 def lnko(num1,num2):
     if num1 > num2:
         num1,num2 = num2,num1
-    for i in range(num1+1,1,-1):
+    if num2%num1 == 0:
+        return num1
+    for i in range(num1//2,1,-1):
         if num1 % i == 0 and num2 % i == 0 and prime(i):
             return i
- #A kisebb számtóé visszafele megy a for ciklus, hogy hatékonyabb legyen a program.
+print(lnko(104573455,5015360))
